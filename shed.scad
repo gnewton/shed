@@ -33,9 +33,28 @@ module p48(length=96){
 // ground
 //% translate([-100,-100,-1]) cube([200,200,1]);
 
+//front side base plate	
+scale(sc,sc) color([1,0.5,1]) translate([103.5,0,0]) rotate([-90,90,0]) b24(length=48);
+// inset
+scale(sc,sc) color([1,0.5,0]) translate([103.5,51.5,0]) rotate([-90,90,90]) b24(length=100);
+scale(sc,sc) color([1,0.5,1]) translate([100,51.5,18]) rotate([-90,90,90]) b44(length=17);
+scale(sc,sc) color([1,0.5,1]) translate([100,51.5,48]) rotate([-90,90,90]) b44(length=17);
+scale(sc,sc) color([1,0.5,1]) translate([100,51.5,32]) rotate([-90,90,90]) b24(length=17);
+
+
+
+
 //left side base plate	
-scale(sc,sc) color([1,0.5,1]) translate([103.5,0,0]) rotate([-90,90,0]) b24(length=51.5);
-scale(sc,sc) color([1,0.5,1]) translate([3.5,0,0]) rotate([-90,90,0]) b24(length=51.5);
+scale(sc,sc) color([1,0.5,1]) translate([3.5,0,0]) rotate([-90,90,0]) b24(length=48);
+// inset
+scale(sc,sc) color([1,0.5,0]) translate([25.5,51.5,0]) rotate([-90,90,90]) b24(length=25.5);
+scale(sc,sc) color([1,0.5,1]) translate([20.5,51.5,18]) rotate([-90,90,90]) b44(length=17);
+scale(sc,sc) color([1,0.5,1]) translate([20.5,51.5,48]) rotate([-90,90,90]) b44(length=17);
+scale(sc,sc) color([1,0.5,1]) translate([20.5,51.5,32]) rotate([-90,90,90]) b24(length=17);
+//door header
+scale(sc,sc) color([1,0.5,1])translate([78,48,0])  b24(length=69);
+
+
 
 
 
@@ -83,13 +102,13 @@ scale(sc,sc) color([0,0.5,0]) translate([3.5,-18,69]) rotate([-67,0,0]) b24(leng
 scale(sc,sc) color([1,0,0]) translate([5,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
 scale(sc,sc) color([1,0,0]) translate([97,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
 //middle ones
-scale(sc,sc) color([1,0,0]) translate([18.5,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
-scale(sc,sc) color([1,0,0]) translate([30.5,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
-scale(sc,sc) color([1,0,0]) translate([42,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
-scale(sc,sc) color([1,0,0]) translate([54.5,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
-scale(sc,sc) color([1,0,0]) translate([67,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
-scale(sc,sc) color([1,0,0]) translate([78.5,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
-scale(sc,sc) color([1,0,0]) translate([90,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
+scale(sc,sc) color([1,0,0]) translate([17.5,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
+scale(sc,sc) color([1,0,0]) translate([33,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
+scale(sc,sc) color([1,0,0]) translate([48.25,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
+//scale(sc,sc) color([1,0,0]) translate([54.5,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
+scale(sc,sc) color([1,0,0]) translate([63.25,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
+scale(sc,sc) color([1,0,0]) translate([78.75,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
+//scale(sc,sc) color([1,0,0]) translate([90,51.5,72.5]) rotate([90,0,0]) b24(length=53.5);
 
 
 
@@ -112,10 +131,23 @@ scale(sc,sc) color([1,.7,.7]) translate([0,46.5,0]) rotate([0,0,-90]) b24(length
 scale(sc,sc) color([1,.8,1]) translate([0,5,0]) rotate([0,0,-90]) b24(length=71);//back jack
 scale(sc,sc) color([0,1,1]) translate([0,46.5,72.5]) rotate([90,90,0]) b24(length=43);
 
-//Wall fillers	
+//Right Wall verticals
 scale(sc,sc) color([.7,.0,.5]) translate([0,19.5,0]) rotate([0,0,-90]) b24(length=71);
 scale(sc,sc) color([.7,.0,.5]) translate([0,33.5,0]) rotate([0,0,-90]) b24(length=71);
 //scale(sc,sc) color([.7,.0,.5]) translate([0,41,1.5]) rotate([0,0,-90]) b24(length=66.5);
+//Right Wall horizontals	
+scale(sc,sc) color([.7,.0,.5]) translate([0,18,24]) rotate([0,90,-90]) b24(length=13);
+scale(sc,sc) color([.7,.0,.5]) translate([0,18,48]) rotate([0,90,-90]) b24(length=13);
+scale(sc,sc) color([.7,.0,.5]) translate([0,18,24]) rotate([0,90,-90]) b24(length=13);
+scale(sc,sc) color([.7,.0,.5]) translate([0,32.5,46.5]) rotate([0,90,-90]) b24(length=13);
+scale(sc,sc) color([.7,.0,.5]) translate([0,32.5,22.5]) rotate([0,90,-90]) b24(length=13);
+scale(sc,sc) color([.7,.0,.5]) translate([0,45.5,48]) rotate([0,90,-90]) b24(length=12.5);
+scale(sc,sc) color([.7,.0,.5]) translate([0,45.5,24]) rotate([0,90,-90]) b24(length=12.5);
+
+
+
+
+
 
 
 
