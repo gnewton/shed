@@ -37,14 +37,19 @@ module p48(length=96,width=48){
 scale(sc,sc) color([1,0.5,1]) translate([103.5,0,0]) rotate([-90,90,0]) b24(length=48);
 // inset
 scale(sc,sc) color([1,0.5,0]) translate([103.5,51.5,0]) rotate([-90,90,90]) b24(length=100);
-scale(sc,sc) color([1,0.5,1]) translate([100,51.5,18]) rotate([-90,90,90]) b44(length=17);
+scale(sc,sc) color([1,0.5,1]) translate([100,51.5,24]) rotate([-90,90,90]) b44(length=17);
 scale(sc,sc) color([1,0.5,1]) translate([100,51.5,48]) rotate([-90,90,90]) b44(length=17);
-scale(sc,sc) color([0,0.5,1]) translate([100,51.5,31.5]) rotate([-90,90,90]) b24(length=17);
+scale(sc,sc) color([1,0.5,1]) translate([100,51.5,62]) rotate([-90,90,90]) b24(length=17);
+
+scale(sc,sc) color([0,0.5,0]) translate([100,51.5,31]) rotate([-90,90,90]) b24(length=17);
 //top
 scale(sc,sc) color([0,0.5,1]) translate([100,51.5,76.5]) rotate([-90,90,90]) b24(length=17);
-scale(sc,sc) color([0,0.5,1]) translate([100,51.5,96]) rotate([-90,90,90]) b24(length=17);
+scale(sc,sc) color([0,0.5,0]) translate([100,51.5,96]) rotate([-90,90,90]) b24(length=17);
 //
 scale(sc,sc) color([0,0.5,1]) translate([100,51.5,1.5]) rotate([-90,90,90]) b24(length=17);
+scale(sc,sc) color([1,0,0])translate([83,48,1.5])  b24(length=19);
+scale(sc,sc) color([1,0,0])translate([98.5,48,1.5])  b24(length=19);
+
 
 
 
@@ -139,9 +144,12 @@ scale(sc,sc) color([0.1,0.7,0.1]) translate([101.5,-32,80]) rotate([-73,0,0]) b2
    //scale(sc,sc) color([0.1,0.7,0.1]) translate([i-1.5,-18,84.5]) rotate([-73,0,0]) b24(length=96);
 
 //}
+scale(sc,sc) color([0.4,0.5,.8]) translate([82.625,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([0.4,0.5,.8]) translate([18.125,-32,80]) rotate([-73,0,0]) b24(length=96);
 
 // middle right
 scale(sc,sc) color([0.1,0.7,1]) translate([63.75,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([0.1,0.7,1]) translate([49.25,-32,80]) rotate([-73,0,0]) b24(length=96);
 scale(sc,sc) color([0.1,0.7,1]) translate([34.75,-32,80]) rotate([-73,0,0]) b24(length=96);
 
 
@@ -261,7 +269,7 @@ scale(sc,sc) color([0.1,0.2,0.1,0.2]) translate([-11.5,-32,80]) rotate([90,73,90
 //left
 scale(sc,sc) color([0.1,0.2,0.1,0.2]) translate([65,-32,80]) rotate([90,73,90]) p48(length=48,width=96);
 // middle
-scale(sc,sc) color([0.4,0.2,0.1,0.2]) translate([36,-32,80]) rotate([90,73,90]) p48(length=29,width=96);
+scale(sc,sc) color([0.4,0.2,0.1,0.4]) translate([36,-32,80]) rotate([90,73,90]) p48(length=29,width=96);
 
 
 
