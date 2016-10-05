@@ -71,10 +71,11 @@ scale(sc,sc) color([1,0.5,1]) translate([20.5,51.5,1.5]) rotate([-90,90,90]) b24
 
 
 //door jack stud
-scale(sc,sc) color([1,0.5,1])translate([78,48,0])  b24(length=75);
-scale(sc,sc) color([1,0.5,1])translate([24,48,0])  b24(length=75);
-// door header
-scale(sc,sc) color([1,0,0]) translate([79.5,48,75]) rotate([-90,-90,90]) b24(length=55.5);
+scale(sc,sc) color([1,0.5,1])translate([78,48,0])  b24(length=73);
+scale(sc,sc) color([1,0.5,1])translate([24,48,0])  b24(length=73);
+// door header (double)
+//scale(sc,sc) color([1,0,0]) translate([79.5,48,75]) rotate([-90,-90,90]) b24(length=55.5);
+scale(sc,sc) color([1,0,0]) translate([79.5,48,73]) rotate([-90,-90,90]) b44(length=55.5);
 
 // above door header
 scale(sc,sc) color([1,1,0]) translate([79.5,48,94.5]) rotate([-90,-90,90]) b24(length=55.5);
@@ -113,6 +114,8 @@ scale(sc,sc) translate([79.5,48,0])  b44(length=96);
 
 //back roof horizontal
 scale(sc,sc) color([1,0.5,0]) translate([113,0,87]) rotate([-90,0,90]) rb26(length=124);
+scale(sc,sc) color([.8,0.5,.3]) translate([103.5,-2,85]) rotate([-90,0,90]) rb26(length=103.5);
+
 //front roof horizontal
 scale(sc,sc) color([1,0,0]) translate([113,49.5,102]) rotate([-90,0,90]) rb26(length=124);
 //scale(sc,sc) color([1,0.5,0]) translate([103.5,46,87]) rotate([-90,0,90]) rb26(length=103.5);
@@ -136,8 +139,8 @@ scale(sc,sc) color([0.1,0.7,0.1]) translate([111.5,-32,80]) rotate([-73,0,0]) b2
 scale(sc,sc) color([1,0,0]) translate([1.5,48,87]) rotate([90,0,0]) b24(length=48);
 scale(sc,sc) color([0.1,0.7,0.1]) translate([0,-32,80]) rotate([-73,0,0]) b24(length=96);
 //left end over post
-scale(sc,sc) color([1,0,0]) translate([100,48,87]) rotate([90,0,0]) b24(length=48);
-scale(sc,sc) color([0.1,0.7,0.1]) translate([101.5,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([1,0,0]) translate([100.5,48,87]) rotate([90,0,0]) b24(length=48);
+scale(sc,sc) color([0.1,0.7,0.1]) translate([102,-32,80]) rotate([-73,0,0]) b24(length=96);
 
 //for (i = [-9.5:17.05:110]){
   // scale(sc,sc) color([1,0,0]) translate([i,51.5,87]) rotate([90,0,0]) b24(length=53.5);
@@ -145,12 +148,20 @@ scale(sc,sc) color([0.1,0.7,0.1]) translate([101.5,-32,80]) rotate([-73,0,0]) b2
 
 //}
 scale(sc,sc) color([0.4,0.5,.8]) translate([82.625,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([1,0,0]) translate([81,48,87]) rotate([90,0,0]) b24(length=48);
+
 scale(sc,sc) color([0.4,0.5,.8]) translate([18.125,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([1,0,0]) translate([19.625,48,87]) rotate([90,0,0]) b24(length=48);
 
 // middle right
 scale(sc,sc) color([0.1,0.7,1]) translate([63.75,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([1,0,0]) translate([62,48,87]) rotate([90,0,0]) b24(length=48);
+
 scale(sc,sc) color([0.1,0.7,1]) translate([49.25,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([1,0,0]) translate([47.75,48,87]) rotate([90,0,0]) b24(length=48);
+
 scale(sc,sc) color([0.1,0.7,1]) translate([34.75,-32,80]) rotate([-73,0,0]) b24(length=96);
+scale(sc,sc) color([1,0,0]) translate([33.25,48,87]) rotate([90,0,0]) b24(length=48);
 
 
 
@@ -231,9 +242,13 @@ scale(sc,sc) color([1,0.5,0]) translate([103.5,-23,36]) rotate([-90,0,90]) rb26(
 
 //
 scale(sc,sc) color([.2,.3,.2])translate([102,-23,37.5])  b24(length=40);
-scale(sc,sc) color([.2,.3,.2])translate([25,-23,37.5])  b24(length=40);
-scale(sc,sc) color([.2,.3,.2])translate([50,-23,37.5])  b24(length=40);
-scale(sc,sc) color([.2,.3,.2])translate([75,-23,37.5])  b24(length=40);
+scale(sc,sc) color([.2,1,.2])translate([18,-23,37.5])  b24(length=40);
+scale(sc,sc) color([.2,.3,.2])translate([34.75,-23,37.5])  b24(length=40);
+scale(sc,sc) color([.2,.3,.2])translate([49.25,-23,37.5])  b24(length=40);
+
+scale(sc,sc) color([.2,.3,.2])translate([63.75,-23,37.5])  b24(length=40);
+scale(sc,sc) color([.2,.3,.2])translate([82.5,-23,37.5])  b24(length=40);
+
 scale(sc,sc) color([.2,.3,.2])translate([0,-23,37.5])  b24(length=40);
 // back top plate
 scale(sc,sc) color([1,0.5,.6]) translate([103.5,-23,77.5]) rotate([-90,-90,90]) b24(length=103.5);
